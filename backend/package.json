@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "module": "./src/app.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node dist/app.js\"",
+    "build": "tsc -p .",
+    "start": "node dist/app.js"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1",
+    "tsc-watch": "^7.1.1"
+  }
+}
